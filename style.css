@@ -1,0 +1,122 @@
+/* additional font faces */
+@font-face{
+    font-family: body;
+    src: url(Fonts/ProductSans-Regular.ttf);
+}
+@font-face{
+    font-family: head;
+    src: url(Fonts/ProductSans-Bold.ttf);
+}
+
+/* overall webpage styling */
+*{
+    padding: 0;    
+    margin: 0;
+}
+
+/* guideline styling */
+.guideBody{
+    margin-bottom: 30px !important;
+    text-align: justify;
+}
+.guideHead{
+    text-decoration: underline;
+}
+p>strong{
+    text-decoration: underline;
+}
+
+/* main body styling */
+.mainBody{
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    border: 3px solid #e7e7e7;
+    border-radius: 8px;
+    min-width: fit-content;
+    max-width: max-content;
+    min-height: fit-content;
+    max-height: max-content;
+    margin: auto;
+    align-content: center;
+    background-color: lightgrey;
+}
+.spacer{
+    margin: 30px;
+}
+.counter{
+    text-align: center;   
+}
+.count{
+    font-size: 65px;
+    display: inline-block;
+    background-color:white;
+}
+#coln{
+    background-color: lightgrey;
+}
+.btns{
+    text-align: center;
+}
+
+/* application title styling */
+.title{
+    font-family: head;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 32;
+    padding-top: 20px;
+}
+
+/* buttons styling */
+.button{
+    font-family: body;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    align-content: center;
+    padding: 20px;
+    margin: 3px;
+    width: fit-content;
+    height: 60px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition-duration: 0.2s;
+    -webkit-transition-duration: 0.2s;
+    background-color: white;
+    color: black;
+    border: 2px solid #e7e7e7;
+}
+#pauseBtn:hover{
+    background-color: rgb(6, 221, 250);
+    box-shadow: 0 12px 16px 0 rgba(15,170,250,0.4),0 17px 50px 0 rgba(65,190,250,0.5);
+}
+#resetBtn:hover{
+    background-color: rgb(255, 80, 80);
+    box-shadow: 0 12px 16px 0 rgba(255, 7, 7, 0.3),0 17px 50px 0 rgba(255,49,49,0.4);
+}
+#startBtn:hover, #saveBtn:hover{
+    background-color: rgb(0, 180, 0);
+    box-shadow: 0 12px 16px 0 rgba(7,180,7,0.6),0 17px 50px 0 rgba(49, 180, 49, 0.55);
+}
+.button:active{
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+/* history log styling */
+.historyLog{
+    margin-top: 60px;
+    border: 2px solid #e7e7e7;
+    text-align: center;
+    text-decoration: underline;
+}
+
+/* credits styling */
+.credits{
+    color: lightgray;
+    text-align: center;
+    border: solid 2px black;
+    background-color: white;
+}
