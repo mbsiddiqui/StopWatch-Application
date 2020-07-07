@@ -6,6 +6,7 @@ var msec = 0;
 var minCounter = document.getElementById("min");
 var secCounter = document.getElementById("sec");
 var msecCounter = document.getElementById("msec");
+var startBtnId = document.getElementById("startBtn");
 
 /* stop-watch */
 function stopWatch() {
@@ -27,15 +28,13 @@ function stopWatch() {
 /* start function */
 function start() {
     interval = setInterval(stopWatch, 10);
-    var startBtnId = document.getElementById("startBtn");
-    startBtnId.disabled = true;
+    startBtnId.disabled = true; /* disabling the start button */
 }
 
 /* pause function */
 function pause() {
     clearInterval(interval);
-    var startBtnId = document.getElementById("startBtn");
-    startBtnId.disabled = false;
+    startBtnId.disabled = false; /* enabling the start button */
 }
 
 /* reset function */
@@ -47,10 +46,13 @@ function reset() {
     secCounter.innerHTML = "00";
     minCounter.innerHTML = "00";
     clearInterval(interval);
+    startBtnId.disabled = false; /* enabling the start button */
 }
 
 /* save function */
 function save(){
+    startBtnId.disabled = false; /* enabling the start button */
+    
     var historyId = document.getElementById("history");
     var currentMin = minCounter.innerHTML;
     var currentSec = secCounter.innerHTML;

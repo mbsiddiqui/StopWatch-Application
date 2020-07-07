@@ -62,11 +62,20 @@ p>strong{
 
 /* application title styling */
 .title{
-    font-family: head;
     text-align: center;
+}
+.titleHead{
+    display: inline-block;
+    font-family: head;
     text-decoration: underline;
     font-size: 32;
     padding-top: 20px;
+}
+.titleImg{
+    text-decoration: underline;
+    width: 45px;
+    height: 50px;
+    padding-left: 20px;
 }
 
 /* buttons styling */
