@@ -119,13 +119,20 @@ p>strong{
     margin-top: 60px;
     border: 2px solid #e7e7e7;
     text-align: center;
+}
+.historyHead{
     text-decoration: underline;
+}
+#history{
+    text-decoration: none;
+    margin-top: 5px;    
 }
 
 /* credits styling */
 .credits{
-    color: lightgray;
+    color: black;
     text-align: center;
     border: solid 2px black;
-    background-color: white;
+    border-radius: 20px;
+    background-color: lightgrey;
 }
