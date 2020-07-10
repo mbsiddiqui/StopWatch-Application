@@ -32,11 +32,13 @@
     <div class="mainBody">
         <!-- stopwatch counter -->
         <div class="counter">
+            <h1 id="hour" class="count">00</h1>
+            <h1 id="coln" class="count">:</h1>
             <h1 id="min" class="count">00</h1>
             <h1 id="coln" class="count">:</h1>
             <h1 id="sec" class="count">00</h1>
-            <h1 id="coln" class="count">:</h1>
-            <h1 id="msec" class="count">00</h1>
+            <!-- <h1 id="coln" class="count">:</h1> -->
+            <h1 id="msec" class="countMsec">00</h1>
         </div>
 
         <!-- spacer -->
@@ -47,7 +49,7 @@
             <button id="startBtn" class="button" onclick="start()">Start</button>
             <button id="pauseBtn" class="button" onclick="pause()">Pause</button>
             <button id="resetBtn" class="button" onclick="reset()">Reset</button>
-            <button id="saveBtn" class="button" onclick="save()">Save</button>
+            <button id="lapBtn" class="button" onclick="lap()">Lap</button>
         </div>
 
         <!-- history log-->
