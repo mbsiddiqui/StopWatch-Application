@@ -16,10 +16,12 @@
 
 /* guideline styling */
 .guideBody{
+    font-family: body;
     margin-bottom: 30px !important;
     text-align: justify;
 }
 .guideHead{
+    font-family: head;
     text-decoration: underline;
 }
 p>strong{
@@ -69,6 +71,7 @@ p>strong{
 
 /* counter styling */
 .counter{
+    font-family: head;
     text-align: center;   
 }
 .countMsec{
@@ -130,15 +133,18 @@ p>strong{
     text-align: center;
 }
 .historyHead{
+    font-family: head;
     text-decoration: underline;
 }
 #history{
+    font-family: body;
     text-decoration: none;
     margin-top: 5px;    
 }
 
 /* credits styling */
 .credits{
+    font-family: body;
     color: black;
     text-align: center;
     border: solid 2px black;
