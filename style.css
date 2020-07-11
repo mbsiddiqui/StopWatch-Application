@@ -73,12 +73,15 @@ p>strong{
 }
 .countMsec{
     font-size: 40px;
-    display: inline;
+    display: inline-block;
+    margin-left: 10px;
+    width: max-content;
 }
 .count{
     font-size: 65px;
     display: inline-block;
     background-color:white;
+    width: fit-content;
 }
 #coln{
     background-color: lightgrey;
@@ -111,7 +114,7 @@ p>strong{
     background-color: rgb(255, 80, 80);
     box-shadow: 0 12px 16px 0 rgba(255, 7, 7, 0.3),0 17px 50px 0 rgba(255,49,49,0.4);
 }
-#startBtn:hover, #saveBtn:hover{
+#startBtn:hover, #lapBtn:hover{
     background-color: rgb(0, 180, 0);
     box-shadow: 0 12px 16px 0 rgba(7,180,7,0.6),0 17px 50px 0 rgba(49, 180, 49, 0.55);
 }

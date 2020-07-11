@@ -23,17 +23,35 @@ function stopWatch() {
     if (msec === 100) {
         msec = 0;
         sec++;
-        secCounter.innerHTML = sec;
+        /* appending '0' if second is 1-9*/
+        if (sec >= 0 && sec <= 9) {
+            secCounter.innerHTML = "0" + sec;
+        }
+        else {
+            secCounter.innerHTML = sec;
+        }
     }
-    else if (sec === 30) {
+    else if (sec === 60) {
         sec = 0;
         min++;
-        minCounter.innerHTML = min;
+        /* appending '0' if minute is 1-9*/
+        if (min >= 0 && min <= 9) {
+            minCounter.innerHTML = "0" + min;
+        }
+        else {
+            minCounter.innerHTML = min;
+        }
     }
-    else if (min === 1) {
+    else if (min === 60) {
         min = 0;
         hour++;
-        hourCounter.innerHTML = hour;
+        /* appending '0' if hour is 1-9*/
+        if (hour >= 0 && hour <= 9) {
+            hourCounter.innerHTML = "0" + hour;
+        }
+        else {
+            hourCounter.innerHTML = hour;
+        }
     }
 }
 
